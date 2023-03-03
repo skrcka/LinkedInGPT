@@ -1,0 +1,18 @@
+{
+    "name": "LinkedInGPT",
+    "description": "Use the power of openai to generate linkedin replies",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+       "activeTab",
+       "scripting"
+    ],
+    "browser_action":{
+     },
+    "content_scripts":[
+        {
+         "matches":["*://*.linkedin.com/*"],
+         "js":["main.js"]
+        }
+      ]
+ }
